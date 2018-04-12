@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record model="citasfpg.citasfpg" id="cita1">
+		<field name="autor">Luis Martinez</field>
+		<field name="cita">Intel prepara un nuevo procesador</field>
+		<field name="fechaVisual">10/02/2018</field>
+		<field name="orden">1</field>
+	</record>
+	<record model="citasfpg.citasfpg" id="cita2">
+		<field name="autor">Pedro Diaz</field>
+		<field name="cita">Facebook y la censura</field>
+		<field name="fechaVisual">10/02/2018</field>
+		<field name="orden">2</field>
+	</record>
+	<record model="citasfpg.citasfpg" id="cita3">
+		<field name="autor">María López</field>
+		<field name="cita">Suben las ventas de IPhone</field>
+		<field name="fechaVisual">14/03/2018</field>
+		<field name="orden">1</field>
+	</record>
+	<record model="citasfpg.citasfpg" id="cita4">
+		<field name="autor">Ana Pérez</field>
+		<field name="cita">Venezuela crea una criptomoneda</field>
+		<field name="fechaVisual">14/03/2018</field>
+		<field name="orden">2</field>
+	</record>
+</odoo>

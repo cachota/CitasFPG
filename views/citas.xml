@@ -1,0 +1,54 @@
+<odoo>
+	<data>
+		<record id="view_citas_tree" model="ir.ui.view">
+			<field name="name">citasfpg.citasfpg.tree</field>
+			<field name="model">citasfpg.citasfpg</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="Citas">
+					<field name="autor"/>
+					<field name="cita"/>
+					<field name="fechaVisual"/>
+					<field name="orden"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_citas_form" model="ir.ui.view">
+			<field name="name">citasfpg.citasfpg.form</field>
+			<field name="model">citasfpg.citasfpg</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="Citas">
+					<sheet>
+						<div>
+							<table style="width:600px;">
+								<tr>
+									<td><h4>AUTOR:</h4><field name="autor" required="1"/></td>
+								</tr>
+								<tr>
+									<td><h4>CITA:</h4><field name="cita" widget="html"/></td>
+								</tr>
+								<tr>
+									<td><h4>FECHA DE VISUALIZACIÓN:</h4><field name="fechaVisual"/></td>
+								</tr>
+								<tr>
+									<td><h4>ORDEN:</h4><field name="orden"/></td>
+								</tr>
+							</table>
+						</div>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="action_crear_cita">
+			<field name="name">Citas</field>
+			<field name="res_model">citasfpg.citasfpg</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem id="menu_citas" name="CitasFPG"/>
+		<menuitem id="menu_crear_cita" name="Crear Cita" parent="menu_citas"
+			action="action_crear_cita"/>
+	</data>
+	
+</odoo>
